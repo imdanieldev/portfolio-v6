@@ -101,11 +101,11 @@
 		</div>
 	</div>
 </template>
-<script setup lang="ts">
+<script setup lang="js">
 const d = new Date();
 let year = d.getFullYear();
 let Age = ref(year - 2008)
 useHead({
 	title: 'Daniel Nasr - About Me',
-})
+});
 </script>
