@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 	experimental: {
 		defaults: {
 		  nuxtLink: {
-			activeClass: 'active underline',
+			activeClass: 'active',
 		  }
 		}
 	  }
