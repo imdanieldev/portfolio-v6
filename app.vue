@@ -59,6 +59,11 @@ function menush(){
 		menu = false;
 	}
 }
+import { inject } from '@vercel/analytics';
+
+defineNuxtPlugin(() => {
+  inject();
+});
 </script>
 <style>
 .page-enter-active,
