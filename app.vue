@@ -27,7 +27,6 @@
 	</div>
 </template>
 <script setup lang="js">
-import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 let menu = false;
 useHead({
 	meta: [
