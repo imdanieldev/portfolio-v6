@@ -1,7 +1,6 @@
 <template>
 	<div class="calc-height flex items-center justify-center flex-col text-center px-3 select-none">
-		<div
-			class="mb-3 overflow-hidden relative w-full h-auto px-2 py-16 flex justify-center items-center flex-col">
+		<div class="mb-3 overflow-hidden relative w-full h-auto px-2 py-16 flex justify-center items-center flex-col">
 			<svg xmlns="http://www.w3.org/2000/svg" class="w-full h-32 fill-green-500 absolute opacity-30 blur-sm -z-10"
 				viewBox="0 0 16 16">
 				<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -10,6 +9,15 @@
 			</svg>
 			<h5 class="text-2xl font-semibold">Me (Daniel Nasr)</h5>
 			<p class="text-xl">Age: {{ Age }} <br />Location: Iran, Isfahan <br />Focusing</p>
+			<button class="mt-6 animation-right">
+				<NuxtLink to="/contact">
+					<svg xmlns="http://www.w3.org/2000/svg" class="fill-green-400 bg-green-400/5 rounded-full h-8 w-8"
+						viewBox="0 0 16 16">
+						<path fill-rule="evenodd"
+							d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+					</svg>
+				</NuxtLink>
+			</button>
 		</div>
 		<div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 w-full mb-3">
 			<div
@@ -88,8 +96,7 @@
 					efficient.</p>
 			</div>
 		</div>
-		<div
-			class="mb-3 overflow-hidden relative w-full h-auto px-2 py-16 flex justify-center items-center flex-col">
+		<div class="mb-3 overflow-hidden relative w-full h-auto px-2 py-16 flex justify-center items-center flex-col">
 			<svg xmlns="http://www.w3.org/2000/svg" class="w-full h-32 fill-green-500 absolute opacity-30 blur-sm -z-10"
 				viewBox="0 0 16 16">
 				<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
