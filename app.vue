@@ -37,8 +37,8 @@ useHead({
 	}
 });
 useSeoMeta({
-	title: 'Daniel Nasr Web Dev',
-	ogTitle: 'Daniel Nasr Web Dev',
+	title: 'Daniel Web Dev',
+	ogTitle: 'Daniel Web Dev',
 	description: 'This is my site, let me tell you all about it.',
 	ogDescription: 'This is my site, let me tell you all about it.',
 });
