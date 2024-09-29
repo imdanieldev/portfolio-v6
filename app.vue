@@ -30,7 +30,8 @@
 let menu = false;
 useHead({
 	meta: [
-		{ name: 'description', content: 'Daniel Portfolio.' }
+		{ name: 'description', content: 'Daniel Portfolio.' },
+		{ name: 'theme-color', content: '#030712' }
 	],
 	bodyAttrs: {
 		class: "bg-gray-950 text-white"
