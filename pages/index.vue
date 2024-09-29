@@ -17,7 +17,7 @@
 </template>
 <script setup lang="ts">
 useHead({
-    title: 'Daniel Nasr - Home',
+    title: 'Daniel Web Dev',
 });
 </script>
 <style>
