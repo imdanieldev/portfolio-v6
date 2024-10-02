@@ -108,7 +108,7 @@
 		</div>
 	</div>
 </template>
-<script setup lang="js">
+<script setup lang="ts">
 const d = new Date();
 let year = d.getFullYear();
 let Age = ref(year - 2008)

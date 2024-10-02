@@ -21,7 +21,7 @@
 				<h5 class="text-3xl font-semibold">Instagram</h5>
 				<p class="text-xl">@imdanieln2008</p>
 			</div>
-			<div @click="goto('mailto:danialnasronline')"
+			<div @click="goto('mailto:danialnasronline@gmail.com')"
 				class="overflow-hidden relative w-full h-auto px-2 py-16 bg-white/5 rounded-xl border-2 border-solid border-transparent hover:border-green-500 cursor-pointer flex justify-center items-center flex-col">
 				<svg xmlns="http://www.w3.org/2000/svg"
 					class="w-full h-32 fill-green-500 absolute opacity-30 blur-sm -z-10" viewBox="0 0 16 16">
@@ -38,7 +38,7 @@
 		</div>
 	</div>
 </template>
-<script setup lang="js">
+<script setup lang="ts">
 useHead({
 	title: 'Daniel Nasr - Contact Me',
 });
