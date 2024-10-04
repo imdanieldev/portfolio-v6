@@ -63,7 +63,7 @@ useSeoMeta({
 <style>
 .page-enter-active,
 .page-leave-active {
-	transition: all 0.4s ease;
+	transition: all 0.2s ease;
 }
 
 .page-enter-from,
@@ -74,7 +74,7 @@ useSeoMeta({
 
 .menu-enter-active,
 .menu-leave-active {
-	transition: 0.3s ease;
+	transition: 0.2s ease;
 }
 
 .menu-enter-from,
