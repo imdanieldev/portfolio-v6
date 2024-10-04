@@ -63,14 +63,12 @@ useSeoMeta({
 <style>
 .page-enter-active,
 .page-leave-active {
-	transition: all 0.4s ease-in-out
+	transition: all 0.4s ease;
 }
 
 .page-enter-from,
 .page-leave-to {
 	opacity: 0;
-	background-color: rgba(34, 197, 94, 0.8);
-	filter: blur(5rem);
 
 }
 
@@ -81,9 +79,7 @@ useSeoMeta({
 
 .menu-enter-from,
 .menu-leave-to {
-	background-color: rgb(74, 222, 128);
 	opacity: 0;
-	filter: blur(5rem);
 }
 
 .active {
