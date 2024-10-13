@@ -8,19 +8,20 @@
 					d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
 			</svg>
 			<h5 class="text-2xl font-semibold">Me (Daniel Nasr)</h5>
-			<p class="text-xl">Age: {{ Age }} <br />Location: Iran, Isfahan <br />Focusing</p>
-			<button class="mt-6 animation-right">
-				<NuxtLink to="/contact">
-					<svg xmlns="http://www.w3.org/2000/svg" class="fill-green-400 bg-green-400/5 rounded-full h-8 w-8"
-						viewBox="0 0 16 16">
-						<path fill-rule="evenodd"
-							d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-					</svg>
-				</NuxtLink>
-			</button>
+			<p class="text-xl">
+				Age: {{ Age }} <br />
+				Location: Iran, Isfahan <br />
+				Focusing
+			</p>
+			<div class="mt-6 flex gap-4 justify-center items-center flex-wrap text-center text-xl">
+				<a href="http://imdanieln.t.me"
+				target="_blank" rel="noopener noreferrer" class="underline hover:text-green-400">Telegram</a>
+				<a href="http://github.com/imdanieldev"
+				target="_blank" rel="noopener noreferrer" class="underline hover:text-green-400">Github</a>
+			</div>
 		</div>
 		<div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 w-full mb-3">
-			<div
+			<div id="box"
 				class="overflow-hidden relative w-full h-auto px-2 py-16 bg-white/5 rounded-xl border-2 border-solid border-transparent hover:border-green-500 cursor-pointer flex justify-center items-center flex-col">
 				<svg xmlns="http://www.w3.org/2000/svg"
 					class="w-full h-32 fill-green-500 absolute opacity-30 blur-sm -z-10" viewBox="0 0 16 16">
@@ -28,11 +29,11 @@
 						d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
 				</svg>
 				<h5 class="text-2xl font-semibold">Seo</h5>
-				<p class="text-xl">Your website will be prepared to be on the first page of search engines such as Bing
+				<p class="text-xl overflow-hidden">Your website will be prepared to be on the first page of search engines such as Bing
 					and Google.
 					Using meta tags and keywords.</p>
 			</div>
-			<div
+			<div id="box"
 				class="overflow-hidden relative w-full h-auto px-2 py-16 bg-white/5 rounded-xl border-2 border-solid border-transparent hover:border-green-500 cursor-pointer flex justify-center items-center flex-col">
 				<svg xmlns="http://www.w3.org/2000/svg"
 					class="w-full h-32 fill-green-500 absolute opacity-30 blur-sm -z-10" viewBox="0 0 16 16">
@@ -43,7 +44,7 @@
 				<p class="text-xl">Using animation and library for website animations to make it more beautiful and more
 					visible.</p>
 			</div>
-			<div
+			<div id="box"
 				class="overflow-hidden relative w-full h-auto px-2 py-16 bg-white/5 rounded-xl border-2 border-solid border-transparent hover:border-green-500 cursor-pointer flex justify-center items-center flex-col">
 				<svg xmlns="http://www.w3.org/2000/svg"
 					class="w-full h-32 fill-green-500 absolute opacity-30 blur-sm -z-10" viewBox="0 0 16 16">
@@ -56,7 +57,7 @@
 					monitors, TVs, etc.
 				</p>
 			</div>
-			<div
+			<div id="box"
 				class="overflow-hidden relative w-full h-auto px-2 py-16 bg-white/5 rounded-xl border-2 border-solid border-transparent hover:border-green-500 cursor-pointer flex justify-center items-center flex-col">
 				<svg xmlns="http://www.w3.org/2000/svg"
 					class="w-full h-32 fill-green-500 absolute opacity-30 blur-sm -z-10" viewBox="0 0 16 16">
@@ -69,7 +70,7 @@
 					Bootstrap, JQuery, AnimationCSS, Vite, AlpineJs, etc.
 				</p>
 			</div>
-			<div
+			<div id="box"
 				class="overflow-hidden relative w-full h-auto px-2 py-16 bg-white/5 rounded-xl border-2 border-solid border-transparent hover:border-green-500 cursor-pointer flex justify-center items-center flex-col">
 				<svg xmlns="http://www.w3.org/2000/svg"
 					class="w-full h-32 fill-green-500 absolute opacity-30 blur-sm -z-10" viewBox="0 0 16 16">
@@ -84,7 +85,7 @@
 					site and anyone
 					can improve).</p>
 			</div>
-			<div
+			<div id="box"
 				class="overflow-hidden relative w-full h-auto px-2 py-16 bg-white/5 rounded-xl border-2 border-solid border-transparent hover:border-green-500 cursor-pointer flex justify-center items-center flex-col">
 				<svg xmlns="http://www.w3.org/2000/svg"
 					class="w-full h-32 fill-green-500 absolute opacity-30 blur-sm -z-10" viewBox="0 0 16 16">
@@ -108,11 +109,21 @@
 		</div>
 	</div>
 </template>
-<script setup lang="ts">
+<script setup>
 const d = new Date();
 let year = d.getFullYear();
-let Age = ref(year - 2008)
-useHead({
-	title: 'Daniel Nasr - About Me',
-});
+let Age = ref(year - 2008);
 </script>
+<style lang="scss">
+#box{
+	p{
+		color: transparent;
+		transition: 0.3s ease-in-out
+	}
+	&:hover{
+		p{
+			color: white;
+		}
+	}
+}
+</style>

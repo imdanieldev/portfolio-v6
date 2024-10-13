@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
 	compatibilityDate: '2024-04-03',
 	devtools: { enabled: false },
-	modules: ['@nuxtjs/tailwindcss'],
+	modules: ['@nuxtjs/tailwindcss', '@tresjs/nuxt'],
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },
 		head: {
@@ -16,5 +16,6 @@ export default defineNuxtConfig({
 				activeClass: 'active',
 			}
 		}
-	}
+	},
+
 })
