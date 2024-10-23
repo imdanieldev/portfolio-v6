@@ -2,7 +2,9 @@
 	<div class="min-h-svh">
 		<nav
 			class="h-16 bg-gray-950/60 backdrop-blur-lg flex justify-between items-center px-4 sticky left-0 top-0 z-50">
-			<h2 class="text-3xl text-white select-none block md:hidden">DN</h2>
+			<NuxtLink to="/">
+				<h2 class="text-3xl text-white select-none block md:hidden">DN</h2>
+			</NuxtLink>
 			<Transition name="menu">
 				<ul v-if="menu"
 					class="overflow-hidden flex flex-wrap fixed top-16 bg-gray-950 md:bg-transparent justify-around z-20 left-0 w-full md:w-full h-full md:h-auto md:static gap-2 items-center text-gray-400 transition-all">
@@ -12,7 +14,9 @@
 					<li class="cursor-pointer hover:text-green-400 transition-colors">
 						<NuxtLink class="p-2" to="/about">About</NuxtLink>
 					</li>
-					<h2 class="text-5xl text-white select-none hidden md:block">DN</h2>
+					<NuxtLink to="/">
+						<h2 class="text-5xl text-white select-none hidden md:block">DN</h2>
+					</NuxtLink>
 					<li class="cursor-pointer hover:text-green-400 transition-colors">
 						<NuxtLink class="p-2" to="/skills">Skills</NuxtLink>
 					</li>
