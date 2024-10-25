@@ -1,7 +1,7 @@
 <template>
     <div class="calc-height flex items-center justify-center flex-col text-center px-4">
         <div class="relative z-10 flex items-center text-center justify-center flex-col">
-            <h2 class="text-2xl sm:text-4xl">Hi, My name is <span class="text-purple-400">Daniel Nasr</span></h2>
+            <h2 class="text-2xl sm:text-4xl">Hi, My name is <span class="text-purple-400">Daniel</span></h2>
             <Transition name="text">
                 <p class="text-xl sm:text-2xl mt-6 block w-fit" :key="text">{{ text }}</p>
             </Transition>

@@ -3,7 +3,7 @@
 		<nav
 			class="h-16 bg-gray-950/60 backdrop-blur-lg flex justify-between items-center px-4 sticky left-0 top-0 z-50">
 			<NuxtLink to="/">
-				<h2 class="text-3xl text-white select-none block md:hidden">DN</h2>
+				<h2 class="text-3xl text-white select-none block md:hidden ubuntu-bold">DN</h2>
 			</NuxtLink>
 			<Transition name="menu">
 				<ul v-if="menu"
@@ -15,7 +15,7 @@
 						<NuxtLink class="p-2" to="/about">About</NuxtLink>
 					</li>
 					<NuxtLink to="/">
-						<h2 class="text-5xl text-white select-none hidden md:block">DN</h2>
+						<h2 class="text-5xl text-white select-none hidden md:block ubuntu-bold">DN</h2>
 					</NuxtLink>
 					<li class="cursor-pointer hover:text-purple-400 transition-colors">
 						<NuxtLink class="p-2" to="/skills">Skills</NuxtLink>
@@ -35,8 +35,8 @@
 		<div class="h-[2px] w-full block bg-gradient-to-r from-gray-950 via-purple-600 to-gray-950 mb-3"></div>
 		<NuxtPage />
 		<div
-            class="h-32 w-full absolute bottom-0 left-0 -z-10 bg-gradient-to-t from-purple-500 to-gray-950 opacity-80 blur">
-        </div>
+			class="h-32 w-full absolute bottom-0 left-0 -z-10 bg-gradient-to-t from-purple-500 to-gray-950 opacity-80 blur-[10rem]">
+		</div>
 	</div>
 </template>
 <script setup>
@@ -65,7 +65,7 @@ useHead({
 	],
 	bodyAttrs: {
 		class: "bg-gray-950 text-white ubuntu-regular"
-	}
+	},
 });
 useSeoMeta({
 	title: 'Daniel Web Dev',
@@ -130,10 +130,6 @@ useSeoMeta({
 
 .active {
 	color: rgb(192, 132, 252) !important;
-}
-
-.blur {
-	filter: blur(10rem);
 }
 
 .calc-height {
