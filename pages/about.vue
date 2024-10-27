@@ -17,7 +17,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="mailto:danialnasronline@gmail.com" target="_blank"
+						<a href="#" @click="copytoclipboard('danialnasronline@gmail.com')"
 							class="px-3 py-1 border-2 border-double border-purple-600 uppercase transition-colors hover:bg-purple-600">
 							Email
 						</a>
@@ -31,10 +31,39 @@
 				</ul>
 			</div>
 		</div>
+		<Transition name="alert">
+		<div v-if="alertshow" class="z-50 fixed bottom-5 text-base right-1/2 translate-x-1/2 bg-black/20 backdrop-blur-lg px-4 py-2 border-2 border-solid border-purple-600 text-center">
+			{{ alerttext }}
+		</div>
+		</Transition>
 	</div>
 </template>
 <script setup>
 const d = new Date();
-let year = d.getFullYear();
-let Age = ref(year - 2008);
+const year = d.getFullYear();
+const Age = ref(year - 2008);
+const alertshow = ref(false);
+const alerttext = ref("nothing");
+function myalert(yourtext){
+	alertshow.value = true;
+	alerttext.value = yourtext
+	setTimeout(()=>{
+		alertshow.value = false;
+	},4000);
+}
+function copytoclipboard(yourtext){
+	navigator.clipboard.writeText(yourtext);
+	myalert("The email was saved to the clipboard.")
+}
 </script>
+<style setup>
+.alert-enter-active,
+.alert-leave-active {
+	transition: 0.2s ease;
+}
+
+.alert-enter-from,
+.alert-leave-to {
+	bottom: calc(-1.2rem - 1rem - 2px - 2.5rem);
+}
+</style>

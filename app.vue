@@ -32,7 +32,7 @@
 				</svg>
 			</button>
 		</nav>
-		<div class="h-[2px] w-full block bg-gradient-to-r from-gray-950 via-purple-600 to-gray-950 mb-3"></div>
+		<div class="h-[2px] w-full block bg-gradient-to-r from-purple-600 via-gray-950 to-purple-600 mb-3"></div>
 		<NuxtPage />
 		<div
 			class="h-32 w-full absolute bottom-0 left-0 -z-10 bg-gradient-to-t from-purple-500 to-gray-950 opacity-80 blur-[10rem]">

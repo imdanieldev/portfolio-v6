@@ -32,8 +32,8 @@
 import { TresCanvas } from '@tresjs/core';
 import { OrbitControls } from '@tresjs/cientos';
 const d = new Date();
-let year = d.getFullYear();
-let Age = ref(year - 2008);
+const year = d.getFullYear();
+const Age = ref(year - 2008);
 const texts = ref(["I'm Web Developer", "I'm Student", "I'm "+ Age.value +"yo", "I'm Frontend Developer", "I'm Backend Developer", "I know wordpress", "I know Linux", "I Love Programming"]);
 const text = ref(texts.value[0]);
 const i = ref(1);
