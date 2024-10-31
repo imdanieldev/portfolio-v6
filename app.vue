@@ -1,7 +1,7 @@
 <template>
 	<div class="min-h-svh">
 		<nav
-			class="h-16 bg-gray-950/60 backdrop-blur-lg flex justify-between items-center px-4 sticky left-0 top-0 z-50">
+			class="h-16 bg-gray-950/20 backdrop-blur-md flex justify-between items-center px-4 sticky left-0 top-0 z-50">
 			<NuxtLink to="/">
 				<h2 class="text-3xl text-white select-none block md:hidden ubuntu-bold">DN</h2>
 			</NuxtLink>
@@ -12,16 +12,16 @@
 						<NuxtLink class="p-2" to="/">Home</NuxtLink>
 					</li>
 					<li class="cursor-pointer hover:text-purple-400 transition-colors">
-						<NuxtLink class="p-2" to="/about">About</NuxtLink>
+						<NuxtLink class="p-2" to="/skills">Skills</NuxtLink>
 					</li>
 					<NuxtLink to="/">
 						<h2 class="text-5xl text-white select-none hidden md:block ubuntu-bold">DN</h2>
 					</NuxtLink>
 					<li class="cursor-pointer hover:text-purple-400 transition-colors">
-						<NuxtLink class="p-2" to="/skills">Skills</NuxtLink>
+						<NuxtLink class="p-2" to="/roadmap">Roadmap</NuxtLink>
 					</li>
 					<li class="cursor-pointer hover:text-purple-400 transition-colors">
-						<NuxtLink class="p-2" to="/roadmap">Roadmap</NuxtLink>
+						<a class="p-2" target="_blank" href="//old.imdanieldev.ir">Old Website</a>
 					</li>
 				</ul>
 			</Transition>
@@ -76,7 +76,6 @@ useSeoMeta({
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
 .ubuntu-light {
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 300;
@@ -103,14 +102,13 @@ useSeoMeta({
 
 .page-enter-active,
 .page-leave-active {
-	transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in-out;
 	position: fixed;
 	width: 100%;
 }
 
 .page-enter-from {
 	transform: translateY(120svh);
-	opacity: 0;
 }
 
 .page-leave-to {

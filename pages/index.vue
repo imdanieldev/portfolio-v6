@@ -14,6 +14,33 @@
                     </svg>
                 </NuxtLink>
             </button>
+            <div class="mt-5">
+				<ul class="text-center flex gap-3 flex-wrap justify-center">
+					<li>
+						<a href="//imdanieln.t.me" target="_blank"
+							class="px-3 py-1 border-2 border-double border-purple-600 uppercase transition-colors hover:bg-purple-600">
+							Telegram
+						</a>
+					</li>
+					<li>
+						<a href="#" @click="copytoclipboard('danialnasronline@gmail.com')"
+							class="px-3 py-1 border-2 border-double border-purple-600 uppercase transition-colors hover:bg-purple-600">
+							Email
+						</a>
+					</li>
+					<li>
+						<a href="//github.com/imdanieldev" target="_blank"
+							class="px-3 py-1 border-2 border-double border-purple-600 uppercase transition-colors hover:bg-purple-600">
+							Github
+						</a>
+					</li>
+				</ul>
+			</div>
+            <Transition name="alert">
+		<div v-if="alertshow" class="z-50 fixed bottom-5 text-base right-1/2 translate-x-1/2 bg-black/20 backdrop-blur-lg px-4 py-2 border-2 border-solid border-purple-600 text-center">
+			{{ alerttext }}
+		</div>
+		</Transition>
         </div>
         <div class="opacity-10 absolute w-5 h-5">
             <TresCanvas window-size>
@@ -23,7 +50,7 @@
                     <TresBoxGeometry :args="[2, 2, 2]" />
                     <TresMeshToonMaterial color="#ffffff" />
                 </TresMesh>
-                <TresDirectionalLight :position="[0, 10, 5]" :intensity="1.5" cast-shadow />
+                <TresDirectionalLight :position="[0, 10, 5]" :intensity="2.0" cast-shadow />
             </TresCanvas>
         </div>
     </div>
@@ -46,6 +73,19 @@ function changetext() {
         i.value++;
     }
 }
+const alertshow = ref(false);
+const alerttext = ref("nothing");
+function myalert(yourtext){
+	alertshow.value = true;
+	alerttext.value = yourtext
+	setTimeout(()=>{
+		alertshow.value = false;
+	},4000);
+}
+function copytoclipboard(yourtext){
+	navigator.clipboard.writeText(yourtext);
+	myalert("The email was saved to the clipboard.")
+}
 onMounted(() => {
     setInterval(() => {
         changetext()
@@ -56,6 +96,15 @@ useHead({
 });
 </script>
 <style>
+.alert-enter-active,
+.alert-leave-active {
+	transition: 0.2s ease;
+}
+
+.alert-enter-from,
+.alert-leave-to {
+	bottom: calc(-1.2rem - 1rem - 2px - 2.5rem);
+}
 .text-enter-active,
 .text-leave-active {
     transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
