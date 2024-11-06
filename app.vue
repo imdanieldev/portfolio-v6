@@ -21,7 +21,7 @@
 						<NuxtLink class="p-2" to="/roadmap">Roadmap</NuxtLink>
 					</li>
 					<li class="cursor-pointer hover:text-purple-400 transition-colors">
-						<a class="p-2" target="_blank" href="//old.imdanieldev.ir">Old Website</a>
+						<a class="p-2" target="_blank" href="//blog.imdanieldev.ir">Blog</a>
 					</li>
 				</ul>
 			</Transition>
