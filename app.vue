@@ -20,7 +20,7 @@
 					<li class="cursor-pointer hover:text-blue-400 transition-colors">
 						<NuxtLink class="p-2" to="/roadmap">Roadmap</NuxtLink>
 					</li>
-					<li class="cursor-pointer hover:text-purple-400 transition-colors">
+					<li class="cursor-pointer hover:text-blue-400 transition-colors">
 						<a class="p-2" target="_blank" href="//blog.imdanieldev.ir">Blog</a>
 					</li>
 				</ul>
