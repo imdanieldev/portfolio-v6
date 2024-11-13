@@ -167,7 +167,7 @@
     height: 100%;
     top: 0;
     left: 50%;
-    background: rgba(192, 132, 252, 0.1);
+    background: rgba(96 ,165 ,250, 0.1);
     overflow: hidden;
 
     &::after {
@@ -178,7 +178,7 @@
         width: 100%;
         top: -50%;
         left: 0;
-        background: linear-gradient(to bottom, rgba(192, 132, 252, 0) 0%, rgb(192, 132, 252) 75%, rgb(192, 132, 252) 100%);
+        background: linear-gradient(to bottom, rgba(96, 165, 250, 0) 0%, rgb(96, 165, 250) 75%, rgb(96, 165, 250) 100%);
         animation: drop 7s 0s infinite;
         animation-fill-mode: forwards;
         animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);

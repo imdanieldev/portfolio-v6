@@ -8,20 +8,20 @@
 			<Transition name="menu">
 				<ul v-if="menu"
 					class="overflow-hidden flex flex-wrap fixed top-16 bg-gray-950 md:bg-transparent justify-around z-20 left-0 w-full md:w-full h-full md:h-auto md:static gap-2 items-center text-gray-400 transition-all">
-					<li class="cursor-pointer hover:text-purple-400 transition-colors">
+					<li class="cursor-pointer hover:text-blue-400 transition-colors">
 						<NuxtLink class="p-2" to="/">Home</NuxtLink>
 					</li>
-					<li class="cursor-pointer hover:text-purple-400 transition-colors">
+					<li class="cursor-pointer hover:text-blue-400 transition-colors">
 						<NuxtLink class="p-2" to="/skills">Skills</NuxtLink>
 					</li>
 					<NuxtLink to="/">
 						<h2 class="text-5xl text-white select-none hidden md:block ubuntu-bold">DN</h2>
 					</NuxtLink>
-					<li class="cursor-pointer hover:text-purple-400 transition-colors">
+					<li class="cursor-pointer hover:text-blue-400 transition-colors">
 						<NuxtLink class="p-2" to="/roadmap">Roadmap</NuxtLink>
 					</li>
-					<li class="cursor-pointer hover:text-purple-400 transition-colors">
-						<a class="p-2" target="_blank" href="//old.imdanieldev.ir">Old Website</a>
+					<li class="cursor-pointer hover:text-blue-400 transition-colors">
+						<a class="p-2" target="_blank" href="//blog.imdanieldev.ir">Blog</a>
 					</li>
 				</ul>
 			</Transition>
@@ -32,10 +32,10 @@
 				</svg>
 			</button>
 		</nav>
-		<div class="h-[2px] w-full block bg-gradient-to-r from-purple-600 via-gray-950 to-purple-600 mb-3"></div>
+		<div class="h-[2px] w-full block bg-gradient-to-r from-blue-600 via-gray-950 to-blue-600 mb-3"></div>
 		<NuxtPage />
 		<div
-			class="h-32 w-full absolute bottom-0 left-0 -z-10 bg-gradient-to-t from-purple-500 to-gray-950 opacity-80 blur-[10rem]">
+			class="h-32 w-full absolute bottom-0 left-0 -z-10 bg-gradient-to-t from-blue-500 to-gray-950 opacity-80 blur-[10rem]">
 		</div>
 	</div>
 </template>
@@ -127,7 +127,7 @@ useSeoMeta({
 }
 
 .active {
-	color: rgb(192, 132, 252) !important;
+	color: rgb(96 ,165 ,250) !important;
 }
 
 .calc-height {

@@ -1,13 +1,13 @@
 <template>
     <div class="calc-height flex items-center justify-center flex-col text-center px-4">
         <div class="relative z-10 flex items-center text-center justify-center flex-col">
-            <h2 class="text-2xl sm:text-4xl">Hi, My name is <span class="text-purple-400">Daniel</span></h2>
+            <h2 class="text-2xl sm:text-4xl">Hi, My name is <span class="text-blue-400">Daniel</span></h2>
             <Transition name="text">
                 <p class="text-xl sm:text-2xl mt-6 block w-fit" :key="text">{{ text }}</p>
             </Transition>
             <button class="mt-6 animation-right">
-                <NuxtLink to="/about">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-purple-400 bg-purple-400/5 rounded-full h-8 w-8"
+                <NuxtLink to="/skills">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-blue-400 bg-blue-400/5 rounded-full h-8 w-8"
                         viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
@@ -18,26 +18,26 @@
 				<ul class="text-center flex gap-3 flex-wrap justify-center">
 					<li>
 						<a href="//imdanieln.t.me" target="_blank"
-							class="px-3 py-1 border-2 border-double border-purple-600 uppercase transition-colors hover:bg-purple-600">
+							class="px-3 py-1 border-2 border-double border-blue-600 uppercase transition-colors hover:bg-blue-600">
 							Telegram
 						</a>
 					</li>
 					<li>
 						<a href="#" @click="copytoclipboard('danialnasronline@gmail.com')"
-							class="px-3 py-1 border-2 border-double border-purple-600 uppercase transition-colors hover:bg-purple-600">
+							class="px-3 py-1 border-2 border-double border-blue-600 uppercase transition-colors hover:bg-blue-600">
 							Email
 						</a>
 					</li>
 					<li>
 						<a href="//github.com/imdanieldev" target="_blank"
-							class="px-3 py-1 border-2 border-double border-purple-600 uppercase transition-colors hover:bg-purple-600">
+							class="px-3 py-1 border-2 border-double border-blue-600 uppercase transition-colors hover:bg-blue-600">
 							Github
 						</a>
 					</li>
 				</ul>
 			</div>
             <Transition name="alert">
-		<div v-if="alertshow" class="z-50 fixed bottom-5 text-base right-1/2 translate-x-1/2 bg-black/20 backdrop-blur-lg px-4 py-2 border-2 border-solid border-purple-600 text-center">
+		<div v-if="alertshow" class="z-50 fixed bottom-5 text-base right-1/2 translate-x-1/2 bg-black/20 backdrop-blur-lg px-4 py-2 border-2 border-solid border-blue-600 text-center">
 			{{ alerttext }}
 		</div>
 		</Transition>
