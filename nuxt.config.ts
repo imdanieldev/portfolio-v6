@@ -4,6 +4,7 @@ export default defineNuxtConfig({
 	devtools: { enabled: false },
 	modules: ['@nuxtjs/tailwindcss', '@tresjs/nuxt'],
 	app: {
+		baseURL: '/portfolio-v6/',
 		pageTransition: { name: 'page', mode: 'out-in' },
 		head: {
 			charset: 'utf-8',
